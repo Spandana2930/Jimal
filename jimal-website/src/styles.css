@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #003366;
+  color: white;
+}
+
+.nav-links a {
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+footer {
+  background: #003366;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
