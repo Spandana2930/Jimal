@@ -1,11 +1,15 @@
 export default function Footer({ t }) {
+  const contactInfo = t?.footer || {};
+  
   return (
     <footer>
-      <h3>{t.footer.contact}</h3>
-      <p>USA: 802 Francisco Ave, Mission TX 78572</p>
-      <p>Mexico: Reynosa, Tamaulipas</p>
-      <p>USA Tel: (956) 432-4790 | MX Tel: (899) 282-0759</p>
-      <p>Email: dega.adm@telmexmail.com</p>
+      <div className="content-wrapper">
+        <h3>{contactInfo.contact || 'Contact Information'}</h3>
+        <p><span role="img" aria-label="Location">📍</span> {contactInfo.address || '802 Francisco Ave, Mission TX 78572'} <strong>{contactInfo.country || ', USA'}</strong></p>
+        <p><span role="img" aria-label="Mexico phone">📞</span> <strong>{contactInfo.mexico || 'Mexico'}:</strong> +52 (899) 282-0759</p>
+        <p><span role="img" aria-label="USA phone">📞</span> <strong>{contactInfo.usa || 'USA'}:</strong> +1 (956) 432-4790</p>
+        <p><span role="img" aria-label="Email">✉️</span> dega.adm@telmexmail.com</p>
+      </div>
     </footer>
-  );
+  )
 }

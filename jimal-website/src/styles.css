@@ -1,15 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  width: 100%;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  background: #003366;
-  color: white;
+section {
+  width: 100%;
+  padding: 3rem 2rem;
 }
+
 
 .nav-links a {
   margin-right: 1rem;
@@ -17,16 +20,95 @@ body {
   text-decoration: none;
 }
 
-.hero {
-  padding: 4rem 2rem;
+/* Header & Logo Styles */
+.header {
+  background: #003366;
+  color: white;
+  padding: 1rem 0;
+  position: relative;
   text-align: center;
-  background: #f4f4f4;
 }
 
-section {
-  padding: 3rem 2rem;
+.logo-container {
+  /* padding: 1rem 2rem; */
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-left: 0px;
 }
 
+.logo-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logo-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.logo-placeholder:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.logo-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.logo-subtext {
+  font-size: 1rem;
+  color: #a0c4ff;
+  letter-spacing: 1px;
+}
+
+.slogan {
+  background: #002244;
+  padding: 0.75rem 1rem;
+  margin: 0;
+}
+
+.slogan h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.floating-images {
+  position: absolute;
+  inset: 0;
+  pointer-events: none; /* click-through */
+  z-index: 1;
+}
+
+/* Base floating image */
+.float {
+  position: absolute;
+  width: 140px;
+  opacity: 0.85;
+  /* animation: float 8s ease-in-out infinite; */
+}
+
+/* Individual positions */
+.img1 {
+  top: 20%;
+  left: 5%;
+  animation-delay: 0s;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -44,6 +126,20 @@ footer {
   color: white;
   padding: 2rem;
   text-align: center;
+}
+.full-width {
+  width: 100%;
+}
+.content-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
 @media (max-width: 768px) {

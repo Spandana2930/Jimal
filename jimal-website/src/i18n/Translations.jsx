@@ -9,7 +9,8 @@ export const translations = {
     },
     hero: {
       title: "Industrial Electronic Equipment Sales & Repair",
-      subtitle: "Certified service, advanced diagnostics, and reliable solutions"
+      subtitle: "Certified service, advanced diagnostics, and reliable solutions",
+      slogan: "REPAIR AND SALE OF INDUSTRIAL ELECTRONIC EQUIPMENT"
     },
     mission: {
       title: "Our Mission",
@@ -43,7 +44,11 @@ export const translations = {
       title: "Some of Our Clients"
     },
     footer: {
-      contact: "Contact Information"
+      contact: "Contact Information",
+      address: "802 Francisco Ave, Mission TX 78572",
+      country: ", USA",
+      mexico: "Mexico",
+      usa: "USA"
     }
   },
 
@@ -57,7 +62,8 @@ export const translations = {
     },
     hero: {
       title: "Venta y Reparación de Equipo Electrónico Industrial",
-      subtitle: "Servicio certificado, diagnóstico avanzado y soluciones confiables"
+      subtitle: "Servicio certificado, diagnóstico avanzado y soluciones confiables",
+      slogan: "REPARACIÓN Y VENTA DE EQUIPO ELECTRÓNICO INDUSTRIAL"
     },
     mission: {
       title: "Nuestra Misión",
@@ -91,7 +97,11 @@ export const translations = {
       title: "Algunos de Nuestros Clientes"
     },
     footer: {
-      contact: "Información de Contacto"
+      contact: "Información de Contacto",
+      address: "802 Francisco Ave, Mission TX 78572",
+      country: ", EUA",
+      mexico: "México",
+      usa: "EUA"
     }
   }
 };

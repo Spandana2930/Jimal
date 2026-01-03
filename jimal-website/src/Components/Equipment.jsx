@@ -1,6 +1,6 @@
 export default function Equipment({ t }) {
   return (
-    <section id="equipment">
+    <section id="equipment" className="full-width" >
       <h2>{t.equipment.title}</h2>
       <div className="grid">
         {t.equipment.items.map((item, index) => (
