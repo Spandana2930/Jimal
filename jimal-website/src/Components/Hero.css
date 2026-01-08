@@ -1,46 +1,128 @@
+/* =========================
+   HERO SECTION
+========================= */
+
 .hero {
   padding: 6rem 2rem 4rem;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
   text-align: left;
-  background: linear-gradient(135deg, #c2dcf7 0%, #34516d 100%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("C:\Users\spandana Morampudi\OneDrive\Desktop\JIMAL Website\jimal-website\public\assets\background.jpg");
+
+  /* Background handled via inline style in React */
   background-size: cover;
   background-position: center;
-  color: white;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
   position: relative;
   overflow: hidden;
+
+  transition: background-image 0.6s ease-in-out;
 }
 
+/* =========================
+   HERO CONTENT
+========================= */
 
 .hero-content {
   position: relative;
   z-index: 2;
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
 }
 
+/* =========================
+   HEADINGS
+========================= */
+
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 1.2;
+  color: #ffffff !important
 }
 
 .hero h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #fff;
   font-weight: 400;
+  color: #ffffff !important;
 }
 
+/* =========================
+   SUBTITLE
+========================= */
+
 .hero-content .subtitle {
-  color: #fff;
   font-size: 1.2rem;
   max-width: 800px;
-  margin: 0 auto;
   line-height: 1.6;
-  margin-left: 0px;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   BACKGROUND CHANGE BUTTON
+========================= */
+
+.bg-btn {
+  padding: 0.8rem 1.8rem;
+  background-color: #ffffff;
+  color: #34516d;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bg-btn:hover {
+  background-color: #c2dcf7;
+  color: #1f3347;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   RESPONSIVE STYLES
+========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1.5rem;
+    min-height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content .subtitle {
+    font-size: 1rem;
+  }
+
+  .bg-btn {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero h2 {
+    font-size: 1.3rem;
+  }
 }

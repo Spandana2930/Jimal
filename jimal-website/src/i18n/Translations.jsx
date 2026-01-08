@@ -1,6 +1,7 @@
 export const translations = {
   en: {
     nav: {
+      Home: "Home",
       services: "Services",
       mission: "Mission",
       equipment: "Equipment",

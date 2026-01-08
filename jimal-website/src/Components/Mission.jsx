@@ -1,5 +1,5 @@
 import "./Mission.css"
-import MissionImage from "../../public/assets/Mission.png"
+import MissionImage from "../../public/Mission.png"
 export default function Mission({ t }) {
   return (
     <section id="mission" className="mission">
