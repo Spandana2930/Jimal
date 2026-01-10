@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import bg1 from "../../public/bg1.jpg";
-import bg2 from "../../public/bg2.jpg";
-import bg3 from "../../public/bg3.png";
+import bg1 from "../../public/Images/bg1.jpg";
+import bg2 from "../../public/Images/bg2.jpg";
+import bg3 from "../../public/Images/bg3.png";
 import "./Hero.css";
 
 export default function Hero({ t }) {
