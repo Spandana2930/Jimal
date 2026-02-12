@@ -1,0 +1,72 @@
+.clients {
+  width: 100%;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #d7dde3, #335d7e);
+}
+
+.clients-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.clients h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  color: #1b2a38;
+}
+
+.clients-subtitle {
+  font-size: 1.05rem;
+  color: #555;
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+}
+
+/* GRID */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+/* CLIENT CARD */
+.client-card {
+  background: #ffffff;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  color: #1b2a38;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* CHECK ICON */
+.client-card .check {
+  color: #1b4f72;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* ANIMATION */
+.fade-up {
+  animation: fadeUp 0.9s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

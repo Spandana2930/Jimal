@@ -12,26 +12,24 @@ import circuitbreaker from '../../public/Images/circuitbreaker.jpg'
 import controlRelay from '../../public/Images/controlrelay.jpg'
 import './Equipment.css';
 
-const equipmentItems = [
-  { id: 1, name: 'PLC Systems', description: 'Programmable Logic Controllers', image:plcImage},
-  { id: 2, name: 'HMI Panels', description: 'Human Machine Interfaces', image:HMIImage },
-  { id: 3, name: 'VFDs', description: 'Variable Frequency Drives', image:vfdImage },
-  { id: 4, name: 'Servo Drives', description: 'Precision Motion Control', image:servoDriveImage },
-  { id: 5, name: 'Power Supplies', description: 'Industrial Power Solutions', image:powerSupplyImage },
-  { id: 6, name: 'I/O Modules', description: 'Input/Output Systems', image:ioModuleImage },
-  { id: 7, name: 'Contactors & Starters', description: 'Contactors & Starters',image:contactorsStartersImage},
-  { id: 8, name: 'PCB', description: 'PCB',image:pcbImage },
-  { id: 9, name: 'circuit Breaker', description: 'Circuit Breaker', image:circuitbreaker },
-  { id: 10, name: 'control relay', description: 'Control Relay', image:controlRelay },
-//   { id: 5, name: 'Power Supplies', description: 'Industrial Power Solutions' },
-//   { id: 6, name: 'I/O Modules', description: 'Input/Output Systems' },
-];
+export default function Equipment({ t }) {
+  const equipmentItems = [
+    { id: 1, name: t.equipment.items[0], description: 'Programmable Logic Controllers', image: plcImage },
+    { id: 2, name: t.equipment.items[1], description: 'Human Machine Interfaces', image: HMIImage },
+    { id: 3, name: t.equipment.items[2], description: 'Variable Frequency Drives', image: vfdImage },
+    { id: 4, name: t.equipment.items[3], description: 'Precision Motion Control', image: servoDriveImage },
+    { id: 5, name: t.equipment.items[4], description: 'Industrial Power Solutions', image: powerSupplyImage },
+    { id: 6, name: t.equipment.items[5], description: 'Input/Output Systems', image: ioModuleImage },
+    { id: 7, name: t.equipment.items[6] , description: 'Contactors & Starters', image: contactorsStartersImage },
+    { id: 8, name: t.equipment.items[7], description: 'PCB', image: pcbImage },
+    { id: 9, name: t.equipment.items[8], description: 'Circuit Breaker', image: circuitbreaker },
+    { id: 10, name: t.equipment.items[9], description: 'Control Relay', image: controlRelay },
+  ];
 
-export default function Equipment() {
   return (
     <section id="equipment" className="equipment-section">
       <div className="container">
-        <h2 className="section-title">Equipment We Service</h2>
+        <h2 className="section-title">{t.equipment.title}</h2>
         <div className="equipment-row">
           {equipmentItems.map((item) => (
             <div key={item.id} className="equipment-item">

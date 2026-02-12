@@ -44,10 +44,11 @@ export default function Navbar({ t, lang, setLang }) {
           {/* Desktop Navigation */}
           <div className="desktop-nav">
             <a href="#home">{t.nav.Home}</a>
-            <a href="#services">{t.nav.services}</a>
             <a href="#mission">{t.nav.mission}</a>
+             <a href="#services">{t.nav.services}</a>
             <a href="#equipment">{t.nav.equipment}</a>
             <a href="#clients">{t.nav.clients}</a>
+            <a href="#contact">{t.nav.contact}</a>
             <button
               className="lang-btn"
               onClick={() => setLang(lang === "en" ? "es" : "en")}
@@ -89,6 +90,9 @@ export default function Navbar({ t, lang, setLang }) {
             </a>
             <a href="#clients" onClick={() => setMenuOpen(false)}>
               {t.nav.clients}
+            </a>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>
+              {t.nav.contact}
             </a>
             <button
               className="lang-btn mobile-lang"
